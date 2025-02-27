@@ -22,6 +22,7 @@ body {
 header h1 {
     text-align: center;
     margin-top: 20px;
+    font-family:'Times New Roman', Times, serif
 }
 
 .nav {
@@ -41,9 +42,8 @@ header h1 {
 a {
     text-decoration: none;
 }
-a:hover {
-    color: red;
-}
+
+
 
 .navChild div {
     margin: 5px;
@@ -55,8 +55,15 @@ a:hover {
     text-align: center;
 } 
 
+@keyframes linkBgColor {
+    from { background-color: #00415a; }
+    to {background-color: #00719c;}
+}
+
 .navChild div:hover {
-    background-color:	#00719c;
+    background-color: #00719c;
+    animation-name: linkBgColor;
+    animation-duration: 0.3s;
 }
 
 .logoLinks {
@@ -69,7 +76,21 @@ a:hover {
     text-decoration: none;
 }
 
+
+
 .logo {
+    
     width: 30px;
     height: 30px;
+}
+
+@keyframes logoEnlarge {
+    from { transform: skewX(0deg); }
+    to { transform: skewX(-5deg)}
+}
+
+.logo:hover {
+    transform: skewX(-5deg);
+    animation-name: logoEnlarge;
+    animation-duration: 0.3s;
 }
