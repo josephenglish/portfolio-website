@@ -99,24 +99,30 @@ a {
     animation-duration: 0.3s;
 }
 
+.gameBody {
+    display: flex;
+    justify-content: center;
+}
+
 .games {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    max-width: 1400px;
 }
 
 .gameCard {
     margin: 20px;
-    width: 300px;
-    height: 350px;
+    width: 315px;
+    height: 500px;
     border-radius: 4px;
     color: whitesmoke;
     
 }
 
 .gameCard img {
-    max-width: 300px;
+    max-width: 315px;
 }
 
 @keyframes shadowFade {
@@ -129,3 +135,4 @@ a {
     animation-duration: 0.3s;
     box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px, rgba(0, 0, 0, 0.8) -6px -2px 16px 0px;
 }
+
